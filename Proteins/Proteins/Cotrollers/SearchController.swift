@@ -64,7 +64,7 @@ class SearchController: UIViewController, UISearchBarDelegate {
     }
     
     private func containsOnlyLetters(input: String) -> Bool {
-        for chr in input.characters {
+        for chr in input {
             if !(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") {
                 return false
             }
